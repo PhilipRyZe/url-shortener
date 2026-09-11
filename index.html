@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philips URL Shortener</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Philips URL Shortener</h1>
+        <p class="subtitle" style="line-height:1.6;">
+            Mach aus langen URLs kurze Links.<br>Ein Projekt mit KI</p>
+
+        <div class="form">
+            <input
+                type="url"
+                id="urlInput"
+                placeholder="https://example.com/deine-lange-url"
+                required
+            >
+
+            <button id="shortenButton">
+                URL kürzen
+            </button>
+        </div>
+
+        <div id="result" class="result hidden">
+            <p>Dein Shortlink:</p>
+
+            <div class="shortlink-container">
+                <input id="shortUrl" type="text" readonly>
+                <button id="copyButton">Kopieren</button>
+            </div>
+        </div>
+
+        <p id="message"></p>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
