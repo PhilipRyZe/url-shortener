@@ -8,7 +8,7 @@ const copyButton = document.getElementById("copyButton");
 const message = document.getElementById("message");
 
 // Deine korrekte Cloudflare Worker-URL ist jetzt eingetragen
-const WORKER_URL = "https://url-shortener.philipjanssen.workers.dev";
+const WORKER_URL = "https://url.pjanssen.cc";
 
 shortenButton.addEventListener("click", async () => {
     const url = urlInput.value.trim();
